@@ -21,17 +21,18 @@ ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
 
 const ChartComponent = ({ data }) => {
   const chartConfigs = {
-    type: "pie3d", // The chart type
+    type: "column3d", // The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
     dataSource: {
       // Chart Configuration
       chart: {
-        caption: "Languages",
-        theme: "fusion",
-        decimals: 0,
-        pieRadius: "45%",
+        caption: "Most popular",
+        yAxisName: "Stars",
+        xAxisName: "Repos",
+        xAxisNameFontSize: "16px",
+        yAxisNameFontSize: "16px",
         // captionFontColor: "#102a42",
         // captionFontBold: 0,
         // captionFontSize: 20,
